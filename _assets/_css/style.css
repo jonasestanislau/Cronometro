@@ -45,7 +45,7 @@ div#container div#relogio {
 
 /* Formatação da div.box[hora, minuto, segundo] */
 div#relogio div.box {
-    width: 30%;
+    width: 25%;
     height: 90px;
     display: flex;
     align-items: center;
@@ -55,7 +55,7 @@ div#relogio div.box {
 }
 
 div#relogio div.box.number {
-    width: 70%;
+    width: 75%;
 }
 /* Formatação dos 'two-points' que separa as div.box */
 span.two-points {
