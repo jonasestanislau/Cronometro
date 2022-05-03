@@ -1,0 +1,75 @@
+/* CSS DOCUMENT */
+@font-face {
+    font-family: 'fontdigital';
+    src: url("../_fonts/DS-DIGI.TTF");
+}
+
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #0097a7,#0097a7,#0097a7);
+}
+
+/* Formatação da div#container */
+div#container {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    background: linear-gradient(to left, #573ab4,#fd1d60,#fc45b9);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(41, 41, 41);
+}
+
+/* Formatação da div.relogio, onde será mostrado os box que contém a hora, minutos e segundos */
+div#container div#relogio {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Formatação da div.box[hora, minuto, segundo] */
+div#relogio div.box {
+    width: 30%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+div#relogio div.box.number {
+    width: 70%;
+}
+/* Formatação dos 'two-points' que separa as div.box */
+span.two-points {
+    align-self: center;
+    font-weight: normal;
+    color: white;
+}
+/* Formatação dos paragrafos */
+div.box p {
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    color: white;
+}
+
+p.icones {
+    cursor: pointer;
+}
