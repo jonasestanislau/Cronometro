@@ -31,21 +31,19 @@ function stopwatch() {
         labelHours.innerHTML = String(labelHours.value).padStart(2,'0');
         labelMinutes.value = 0;
     }
- }
+}
 
 btnStart.addEventListener('click', () => {
     pause();
-    controller = setInterval(stopwatch,10)
+    controller = setInterval(stopwatch,10);
 })
 
 function pause() {
-    clearInterval(controller)
+    clearInterval(controller);
 }
 
-btnPause.addEventListener('click', pause)
-
 btnStop.addEventListener('click', () => {
-    clearInterval(controller)
+    clearInterval(controller);
 
     labelMilliSeconds.value = 0;
     labelSeconds.value = 0;
@@ -57,3 +55,5 @@ btnStop.addEventListener('click', () => {
     labelMinutes.innerHTML = String(labelMinutes.value).padStart(2,'0');
     labelHours.innerHTML = String(labelHours.value).padStart(2,'0');
 })
+
+btnPause.addEventListener('click', pause);
